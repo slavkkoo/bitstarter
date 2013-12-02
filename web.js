@@ -7,7 +7,7 @@ var buffer = fs.readFileSync ('index.html');
 var text= buffer.toSrtring('utf-8');
 
 app.get('/', function(request, response) {
-  response.send(text);
+  response.send('text');
 });
 
 var port = process.env.PORT || 5000;
